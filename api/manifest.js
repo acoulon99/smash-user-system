@@ -34,9 +34,9 @@ module.exports = {
                 register: "./user"
             },
             options: {
-                select: ['user'],
+                select: ['api'],
                 routes: {
-                    prefix: "/user"
+                    prefix: "/users"
                 }
             }
         },

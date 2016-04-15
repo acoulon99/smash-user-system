@@ -1,6 +1,6 @@
 {
-  "name": "Coffee-API",
-  "description": "CoffeeHouse Coworkers Main API",
+  "name": "smash-user-system",
+  "description": "User system for the SSB communities",
   "version": "0.0.1",
   "author": "Adam Coulon <adamgcoulon@gmail.com>",
   "engines": {
@@ -11,6 +11,7 @@
   },
   "dependencies": {
     "async": "^1.5.2",
+    "boom": "^3.1.2",
     "glue": "^3.1.0",
     "good": "^6.4.0",
     "good-console": "^5.2.0",

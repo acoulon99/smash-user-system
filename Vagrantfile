@@ -31,7 +31,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
 
   # virtual box provider config  
   config.vm.provider "virtualbox" do |vb|
-    vb.name = "coffeehouse-system"
+    vb.name = "smash-user-system"
 
     # Use VBoxManage to customize the VM. For example to change memory:
     vb.customize ["modifyvm", :id, "--memory", "512"]

@@ -9,9 +9,23 @@ const Joi = require('joi');
 module.exports = [
     {
         method: 'GET',
-        path: '/list',
+        path: '/',
         config: {
             handler: userCtrl.getList
         }
+    },
+    {
+    	method: 'POST',
+    	path: '/',
+    	config: {
+    		handler: userCtrl.register,
+    		validate: {
+    			payload: {
+    				name: Joi.string(),
+    				tag: Joi.string(),
+    				character: Joi.string()
+    			}
+    		}
+    	}
     }
 ];

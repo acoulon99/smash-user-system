@@ -1,5 +1,5 @@
 {
-	"name": "user-module",
+	"name": "user",
 	"version": "0.0.1",
 	"description": "User module for the Smash User System API",
 	"engines": {

@@ -5,7 +5,9 @@
  */
 const Glue = require('glue');
 const manifest = require('./manifest');
-const options = {};
+const options = {
+    relativeTo: __dirname
+};
 
 /**
  * Glue exports a single function compose accepting a JSON manifest file 
@@ -22,13 +24,16 @@ Glue.compose(manifest, options, function (err, server) {
         // Server started great!
         else {
 
+            // initialize connection to mongo
+            require('./mongo.db');
+
             // Welcome route
             server.route({
                 method: 'GET',
                 path: '/',
                 config: {
                     handler: function(request, reply){
-                        reply("Welcome to the Smash User System! Go <a href='/api/documentation'>here</a> for documentation.");
+                        reply("Welcome to the Smash User System! Go <a href='/documentation'>here</a> for documentation.");
                     }
                 }
             });
