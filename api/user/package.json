@@ -1,0 +1,9 @@
+{
+	"name": "user-module",
+	"version": "0.0.1",
+	"description": "User module for the Smash User System API",
+	"engines": {
+		"node": ">=4.0.0"
+	},
+	"main": "index.js"
+}
